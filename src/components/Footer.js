@@ -6,7 +6,7 @@ import socialIcons from "../constants/social-icons"
 
 const Footer = () => {
   const footerLinks = links.map((item, index) => (
-    <AniLink paintDrip key={index} to={item.path} hex="#3fd0d4">
+    <AniLink swipe key={index} to={item.path} hex="#3fd0d4">
       {item.text}
     </AniLink>
   ))
