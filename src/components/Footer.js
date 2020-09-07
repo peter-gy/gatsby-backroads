@@ -1,14 +1,14 @@
 import React from "react"
 import styles from "../css/footer.module.css"
-import { Link } from "gatsby"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 import links from "../constants/links"
 import socialIcons from "../constants/social-icons"
 
 const Footer = () => {
   const footerLinks = links.map((item, index) => (
-    <Link key={index} to={item.path}>
+    <AniLink paintDrip key={index} to={item.path} hex="#3fd0d4">
       {item.text}
-    </Link>
+    </AniLink>
   ))
   const socialLinks = socialIcons.map((item, index) => (
     <a key={index} href={item.url} target="_blank" rel="noreferrer">
